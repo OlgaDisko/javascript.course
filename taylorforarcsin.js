@@ -1,20 +1,16 @@
-var n=prompt();
-var k=prompt();
-var a,b,c,d,sum;
-for (i=1;i<=2*n;i++){
-	b*=i;
+var x=Number(prompt());
+var n=Number(prompt());
+var sum;
+for(var i = 0; i <= n; i++){
+		sum += (factorial(2*i) / (Math.pow(4, i) * Math.pow(factorial(i), 2) * (2*i+1))) * Math.pow(x, 2*i+1);
+	}
+function factorial(a){
+	if (a==0 || a==1) {
+		return 1;
+	} 
+	else {
+		return a*factorial(a-1);
+	} 
 }
-for(i=1;i<=4*n;i++){
-	c*=i;
-}
-for(i=1;i<=n;i++){
-	d*=i;
-}
-for(i=1;i<=2*n+1;i++){
-	a*=a
-}
-sum=1-a*b/(c*d*(2*n+1));
-for(i=0;i<=k;i++){
-	sum+=sum
-}
-alert(sum);
+
+alert("Arcsin equal:"+sum);
