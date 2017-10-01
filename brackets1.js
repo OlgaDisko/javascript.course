@@ -1,5 +1,6 @@
 var a=prompt();
-var n=0,i;
+var n=0;
+var i;
 for(i=0;i<=a.length;i++){
 	if(a.charAt(i)=="("){
 		n+=1;
@@ -7,6 +8,7 @@ for(i=0;i<=a.length;i++){
 		n-=1;
 	if(n==-1){
 		alert("The order is incorrect.");
+		break;
 	}
 	}
 }
