@@ -21,7 +21,7 @@ switch (op){
 	break;
 	default:
 	alert("Error");
-alert(res);
+alert("Your result equal="+res);
 }}
 else{
 	alert("Error")
