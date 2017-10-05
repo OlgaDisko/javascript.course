@@ -9,7 +9,7 @@ function NewArray(num,value,dep){
 var max=value+value*dep/100;
 var min=value-value*dep/100;
   for(var i=0;i<N;i++){
-        arr[i]=Math.floor(min-Math.random()*(max+1-min));
+        arr[i]=(min-Math.random()*(max-min)).toFixed(2);
 	}
    return arr;
 }
