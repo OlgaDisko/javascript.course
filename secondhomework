@@ -1,0 +1,56 @@
+//Task 1//
+var N=Number(prompt("Enter the number of elements in the array:"));
+var s=Number(prompt("Enter the mean value in:"));
+var p=Number(prompt("Enter the departure from mean value in %:"));
+var arr=[];
+var sum=0;
+function NewArray(num,value,dep){
+var max=value+value*dep/100;
+var min=value-value*dep/100;
+  for(var i=0;i<N;i++){
+        arr[i]=Math.floor(min-Math.random()*(max+1-min));
+	}
+   return arr;
+}
+function Compare(a, b){
+  if (a > b){ 
+    return 1;}
+  if (a < b){
+    return -1;
+  }
+}
+var myarr=NewArray(N,s,p);
+var sortarr=myarr.sort(Compare);
+for(var i=0;i<N;i++){
+	sum+=Number(sortarr[i]);
+}
+var average=(sum/N).toFixed(2);
+
+var myarr=NewArray(N,s,p);
+var sortarr=myarr.sort(Compare);
+alert("Generated array:\n"+myarr);
+alert("Sorted array:\n"+sortarr);
+alert("Average of array:\n"+average);
+
+//Task 2//
+var coef=prompt("Enter coeffients of your polinom and x:\n");
+var array=coef.split(",");
+function ValueOfX(arr){
+var poli=0;
+var x=arr.pop();
+for(var i=0;i<arr.length;i++){
+   poli+=arr[i]* Math.pow (x,i);
+}
+return poli;
+}
+alert("Value of x equal:\n"+ValueOfX(array));
+
+//Task 3//
+function Endofday(){
+	var date=new Date();
+	var now=date.getHours()*60+date.getMinutes();
+	var minnow=24*60-now;
+	return minnow;
+}
+var endofday=Endofday();
+alert("Until end of day left "+endofday+" minutes.");
