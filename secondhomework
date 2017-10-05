@@ -1,4 +1,5 @@
 //Task 1//
+
 var N=Number(prompt("Enter the number of elements in the array:"));
 var s=Number(prompt("Enter the mean value in:"));
 var p=Number(prompt("Enter the departure from mean value in %:"));
@@ -46,6 +47,7 @@ return poli;
 alert("Value of x equal:\n"+ValueOfX(array));
 
 //Task 3//
+
 function Endofday(){
 	var date=new Date();
 	var now=date.getHours()*60+date.getMinutes();
