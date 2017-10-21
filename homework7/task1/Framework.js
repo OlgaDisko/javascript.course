@@ -26,7 +26,8 @@ var Framework = {
 		}
 		BySelectorAll:function(css){
 			return document.querySelectorAll(css);
-	}
+		}
+	}	
 	Event:{
 		add:function(type,elem,f){
 			if(typeof elem.addEventListener=="function"){
@@ -47,7 +48,7 @@ var Framework = {
 		dispatch:function(type,elem){
 			return elem.dispatchEvent(type);
 
-		}
+			}
 		}
 }
     
