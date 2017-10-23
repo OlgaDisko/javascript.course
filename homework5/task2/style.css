@@ -1,0 +1,33 @@
+
+p {
+	font-family:Impact, sans-serif;
+	text-align: center;
+	margin-top: -40px;
+	font-size: 2em;
+}
+
+body{ 
+	background-color:rgb(28, 25, 25);
+
+}
+
+ul  {
+	list-style:none;
+	color: rgb(252, 202, 35);
+    margin:0 auto; 
+    padding: 0px; 
+    text-align: center;  
+    padding-top: 300px; 
+}
+ul li {
+	border: 110px;  
+	font-family:fantasy,serif;
+	font-size: 100px;
+	font-weight:bold;
+    display:inline-block;
+
+}
+
+
+
+  
