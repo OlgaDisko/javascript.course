@@ -1,42 +1,12 @@
-/*var w1=document.getElementById("window");
-var i1=document.getElementById("inner");
-var but=document.getElementById("button");
-but.addEventListener('click',function(){
-	 w1.setAttribute('class','opened');}
-)
-w1.addEventListener('click',function(){
-	w1.setAttribute('class','');
-})
-i1.addEventListener('click',function(e){
-	e.stopPropagation();})*/
+var n=Number(prompt());
+var ul=document.getElementsByTagName('ul')[0];
+for (i=0;i<=n;i++){
 
-var w1=document.getElementById("window");
-var i1=document.getElementById("inner");
-var but=document.getElementById("button");
-but.addEventListener('click',function(){
-	 w1.setAttribute('class','opened');}
-	 )
-w1.addEventListener('click',function(e){
-	if(e.target==this){
-		w1.removeAttribute('class')
+	var li=document.createElement('li');
+	ul.appendChild(li);
+}
+ul.addEventListener('click',function(e){
+	if(e.target.parentNode==this){
+		e.target.classList.toggle('colored')
 	}
 })
-
-/*b="ihl;.nj";
-var p=document.createElement("p");div.appendChild(p);
-var hr=document.createElement("hr");
-div.insertBefore(hr,p)
-​
-div.appendChild(hr);
-​
-
-div.insertBefore(hr,p)
-
-p.innerText=123
-
-div.appendChild(hr);
-​
-var hrClone=hr.cloneNode();
-div.appendChild(hrClone);
-*/
-
