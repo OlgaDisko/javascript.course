@@ -20,13 +20,10 @@ human.print=function(){
 	}
 }
 console.log(rhuman);
-function Compare(a, b){
-  if (a > b){ 
-    return 1;}
-  if (a < b){
-    return -1;
+function compareNumeric(a, b){
+    return a.age - b.age;
   }
-}
-var sort=rhuman.sort(Compare);
+
+var sort=rhuman.sort(compareNumeric);
 console.log(sort);
 

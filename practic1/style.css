@@ -1,0 +1,45 @@
+body {  
+	/*background:linear-gradient(to top,rgba(224, 133, 194,.8),rgba(77, 195, 255,.5));*/
+     background: linear-gradient(45deg,rgba(224, 133, 194,.8),rgba(77, 195, 255,.3)), url(https://vignette4.wikia.nocookie.net/adventuretimewithfinnandjake/images/9/9e/S7e24_treehouse_sunset.png/revision/latest?cb=20160331200909); 
+     background-size: cover;
+
+}
+
+#bt{ 
+    background:linear-gradient(to top,rgba(224, 133, 194,.8),rgba(77, 195, 255,.5)); 
+	border-radius:5px;
+	border: 2px solid   #ADD8E6;
+	color: white;}
+#bt:hover{ background:linear-gradient(to top,rgba(224, 133, 194),rgba(77, 195, 255)) ;
+  border: 1px solid   #ADD8E6;;
+}
+#bt:active {
+   background:linear-gradient(to top,rgba(224, 133, 194),rgba(77, 195, 255));
+}
+button {
+  background:rgba(224, 133, 194,.8);
+  border: 2px solid   #ADD8E6;
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  margin-left: 5px;
+  margin-top: 10px;
+
+}
+
+button:hover {
+  background:#ADD8E6  ;
+  border: 1px solid   #838B8B;
+}
+
+button:active {
+   background:rgba(224, 133, 194,.8); 
+}
+
+li {color:white;
+    list-style-type: none; /* Убираем маркеры у списка */
+
+   }
+li:before {
+	content: "Comment:";
+}
