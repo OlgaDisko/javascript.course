@@ -1,12 +1,6 @@
-var n=Number(prompt());
-var ul=document.getElementsByTagName('ul')[0];
-for (i=0;i<=n;i++){
-
-	var li=document.createElement('li');
-	ul.appendChild(li);
-}
-ul.addEventListener('click',function(e){
-	if(e.target.parentNode==this){
-		e.target.classList.toggle('colored')
-	}
+var div=document.getElementsByTagName('div')[0];
+div.contentEditable=true;
+div.addEventListener('copy',function(e){
+	var s=e.clipboardData.setData("text","gifi");
+	console.log(s);
 })
